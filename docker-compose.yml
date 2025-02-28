@@ -1,0 +1,20 @@
+services:
+  app:
+    build: ./docker
+    container_name: inventory_system_app
+    restart: always
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html  # Mounts the entire project at /var/www/html
+
+  nginx:
+    image: nginx:latest
+    container_name: inventory_system_nginx
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html  # Make sure Nginx sees the same files
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
