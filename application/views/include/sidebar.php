@@ -21,7 +21,7 @@
     <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?php echo site_url('admin/dashboard') ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
                         Dashboard
@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?php echo site_url('admin/categories') ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
                         Categories
@@ -37,7 +37,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?php echo site_url('admin/brands') ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
                         Brands
@@ -45,7 +45,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?php echo site_url('admin/products') ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
                         Products
@@ -53,7 +53,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?php echo site_url('admin/orders') ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
                         Orders
@@ -61,7 +61,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?php echo site_url('admin/reports') ?>" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
                         Reports
@@ -78,25 +78,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="<?php echo site_url('admin/profile-settings') ?>" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Profile Setting</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="<?php echo site_url('admin/currency-settings') ?>" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Currency Setting</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="<?php echo site_url('admin/products-image-settings') ?>" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Product Image Setting</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="<?php echo site_url('admin/footer-settings') ?>" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Footer Setting</p>
                         </a>
