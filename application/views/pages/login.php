@@ -17,14 +17,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
 
   <style>
-        .invalid-feedback {
-            display: block;
-            color: red;
-        }
-        .is-invalid {
-            border-color: red;
-        }
-    </style>
+    .invalid-feedback {
+        display: block;
+        color: red;
+    }
+    .is-invalid {
+        border-color: red;
+    }
+  </style>
 
 </head>
 <body class="hold-transition login-page">
@@ -36,6 +36,17 @@
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
+
+      <?php
+        if($this->session->flashdata("error")) {
+      ?>
+        <div class="alert alert-danger">
+          <?php echo $this->session->flashdata("error"); ?>
+        </div>
+
+      <?php
+        }
+      ?>
 
       <form action="<?php echo site_url('admin/validate-login') ?>" method="post" id="frm-admin-login">
         <div class="input-group mb-3">
@@ -81,6 +92,7 @@
 
 <script>
     $(document).ready(function(){
+        // validate email and password
         $("#frm-admin-login").validate({
             rules: {
                 txt_email: {

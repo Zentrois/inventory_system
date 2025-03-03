@@ -10,7 +10,12 @@ class Admin extends CI_Controller {
 
     public function index()
     {
-       $this->load->view("pages/login");
+        if ($this->session->userdata("is_active") == 1) {
+            $this->load->view("pages/dashboard");
+        }else{
+            $this->load->view("pages/login");
+        }
+;
     }
 
     public function validate_login_details()
@@ -21,10 +26,13 @@ class Admin extends CI_Controller {
         $password = isset($login_details['txt_password']) ? $login_details['txt_password'] : '';
  
         if ($this->app_model->is_admin_exist($email, $password)) {
-            echo "Login Successful";                
+            $this->session->set_userdata([
+                "is_active" => 1,
+                "email" => $email
+            ]);           
         }
         else {
-            $thid->session->set_flashdata("error", "Invalid Email or Password");
+            $this->session->set_flashdata("error", "Invalid Email or Password");
         }
 
         return redirect(base_url());

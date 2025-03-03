@@ -10,7 +10,7 @@ class App_model extends CI_Model {
             "password" => md5($password)
         ]);
         $query = $this->db->get();
-        echo $this->db->last_query(); die;
+        // echo $this->db->last_query(); die;
         $result = $query->row();
 
         if (!empty($result)) {
