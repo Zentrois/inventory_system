@@ -103,6 +103,15 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-header">APC Module</li>
+            <li class="nav-item">
+                <a href="<?php echo site_url('admin/update-apc') ?>" class="nav-link">
+                <i class="nav-icon far fa-edit"></i>
+                <p>
+                    Update APC
+                </p>
+                </a>
+            </li>
         </ul>
     </nav>
     <!-- /.sidebar-menu -->

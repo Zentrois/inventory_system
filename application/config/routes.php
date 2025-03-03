@@ -18,3 +18,7 @@ $route['admin/profile-settings'] = 'settings/profile_settings';
 $route['admin/currency-settings'] = 'settings/currency_settings';
 $route['admin/products-image-settings'] = 'settings/product_image_settings';
 $route['admin/footer-settings'] = 'settings/footer_settings';
+
+// APC Module Routes
+$route['admin/update-apc'] = 'apc/update_apc';
+$route['admin/publication-details'] = 'apc/publications_details';
