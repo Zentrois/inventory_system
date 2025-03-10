@@ -10,7 +10,8 @@ class Product extends CI_Controller {
     {
         if ($this->session->userdata("is_active") == 1) {
             $data = array(
-                "page_content" => "pages/list-products"
+                "page_content" => "pages/list-products",
+                "page_scripts" => "include/list_products_scripts"
             );
 
             $this->load->view("layout/main_layout", $data);

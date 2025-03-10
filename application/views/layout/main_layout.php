@@ -33,7 +33,9 @@
     <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
-<?php $this->load->view('include/scripts') ?>
+<?php $this->load->view("include/main_scripts") ?>
+<?php if (isset($page_scripts) && !empty($page_scripts)) {
+    $this->load->view($page_scripts);
+} ?>
 </body>
 </html>

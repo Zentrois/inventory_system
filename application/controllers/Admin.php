@@ -12,7 +12,8 @@ class Admin extends CI_Controller {
     {
         if ($this->session->userdata("is_active") == 1) {
             $data = array(
-                "page_content" => "pages/dashboard"
+                "page_content" => "pages/dashboard",
+                "page_scripts" => "include/dashboard_scripts"
             );
 
             $this->load->view("layout/main_layout", $data);

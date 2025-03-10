@@ -10,7 +10,8 @@ class Report extends CI_Controller {
     {
         if ($this->session->userdata("is_active") == 1) {
             $data = array(
-                "page_content" => "pages/report-dashboard"
+                "page_content" => "pages/report-dashboard",
+                "page_scripts" => "include/report_dashboard_scripts"
             );
 
             $this->load->view("layout/main_layout", $data);

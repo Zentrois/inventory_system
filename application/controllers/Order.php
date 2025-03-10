@@ -10,7 +10,8 @@ class Order extends CI_Controller {
     {
         if ($this->session->userdata("is_active") == 1) {
             $data = array(
-                "page_content" => "pages/list-orders"
+                "page_content" => "pages/list-orders",
+                "page_scripts" => "include/list_orders_scripts"
             );
 
             $this->load->view("layout/main_layout", $data);
