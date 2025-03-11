@@ -20,6 +20,12 @@ class App_model extends CI_Model {
             return false;
         }
     }
+
+    public function save_resource_data($tbl_name, $data = array()){
+        $this->db->insert($tbl_name, $data);
+
+        return true;
+    }
 }
 
 ?>

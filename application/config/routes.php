@@ -19,6 +19,9 @@ $route['admin/currency-settings'] = 'settings/currency_settings';
 $route['admin/products-image-settings'] = 'settings/product_image_settings';
 $route['admin/footer-settings'] = 'settings/footer_settings';
 
+// Handle Ajax Request
+$route["inventory-ajax"] = "ajax/handle_ajax_request";
+
 // APC Module Routes
 $route['admin/update-apc'] = 'apc/update_apc';
 $route['admin/publication-details'] = 'apc/publications_details';

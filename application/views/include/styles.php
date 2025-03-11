@@ -25,3 +25,9 @@
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 
+<style>
+    .validate-custom-form-error label.error{
+        color:red;
+    }
+</style>
+

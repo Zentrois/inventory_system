@@ -30,7 +30,7 @@
             </li>
             <li class="nav-item">
                 <a href="<?php echo site_url('admin/categories') ?>" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <i class="nav-icon fas fa-layer-group"></i>
                     <p>
                         Categories
                     </p>
@@ -38,7 +38,7 @@
             </li>
             <li class="nav-item">
                 <a href="<?php echo site_url('admin/brands') ?>" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <i class="nav-icon fas fa-tags"></i>
                     <p>
                         Brands
                     </p>
@@ -46,7 +46,7 @@
             </li>
             <li class="nav-item">
                 <a href="<?php echo site_url('admin/products') ?>" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <i class="nav-icon fas fa-shopping-bag"></i>
                     <p>
                         Products
                     </p>
@@ -54,7 +54,7 @@
             </li>
             <li class="nav-item">
                 <a href="<?php echo site_url('admin/orders') ?>" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <i class="nav-icon fas fa-shopping-cart"></i>
                     <p>
                         Orders
                     </p>
@@ -62,7 +62,7 @@
             </li>
             <li class="nav-item">
                 <a href="<?php echo site_url('admin/reports') ?>" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <i class="nav-icon fas fa-flag"></i>
                     <p>
                         Reports
                     </p>
@@ -70,7 +70,7 @@
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-share"></i>
+                <i class="nav-icon fas fa-wrench"></i>
                 <p>
                     Settings
                     <i class="right fas fa-angle-left"></i>

@@ -22,9 +22,36 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
+
+
+            <?php 
+            if($this->session->flashdata("success")){
+            ?>
+
+            <div class="alert alert-success">
+              <?php $this->session->flashdata("success") ?>
+            </div>
+
+            <?php  
+            } ?>
+
+            <?php 
+            if($this->session->flashdata("error")){
+            ?>
+
+            <div class="alert alert-danger">
+              <?php $this->session->flashdata("error") ?>
+            </div>
+
+            <?php  
+            } ?>
+           
             <div class="card">
-              <div class="card-header">
+              <div class="card-header d-flex justify-content-between align-items-center">
                 <h3 class="card-title">List Categories</h3>
+                <button type="button" class="btn text-light btn-warning ml-auto" data-toggle="modal" data-target="#modal-form-add-category">
+                  Add Category
+                </button>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -70,3 +97,41 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+<!-- Add Category Form Modal -->
+<div class="modal fade" id="modal-form-add-category">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add Category</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form action="javascript:void(0)" class="validate-custom-form-error" method="POST" id="form-add-category">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="category-name">Category Name</label>
+                <input type="text" class="form-control" id="category-name" placeholder="" name="category_name" required>
+              </div>
+              <div class="form-group">
+                <label for="category-status">Status</label>
+                <select class="form-control" id="category-status" name="category_status">
+                  <option value="1">Active</option>
+                  <option value="0">Inactive</option>
+                </select>
+              </div>
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-success" form="form-add-category">
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
